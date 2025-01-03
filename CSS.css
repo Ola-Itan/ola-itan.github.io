@@ -1,0 +1,230 @@
+
+#container
+{
+	display:grid;
+	grid-template-columns:repeat(2, 1fr);
+	grid-template-columns: 25% 75% ;
+
+}
+
+#latbar
+{
+	grid-column: 1/2;
+	grid-row: 1;
+Height:100%;
+width:100%;
+Font-size: 125%;
+font-family: calibri;
+text-align: left;
+line-height: 2em;
+font-weight:100;
+
+
+}
+
+.menu
+{
+	position:fixed;
+	margin-left:6%;
+}
+
+.sousmenu
+{
+
+	color:black;
+	transition: 1s;
+}
+
+.sousmenu:hover
+{
+	color:#ff5aac;
+	transition:1s;
+}
+
+.sousmenu li
+{
+	max-height:0em;
+	overflow:hidden;
+	transition: 1s;
+	color:black;
+	
+}
+.sousmenu:hover li
+{
+	max-height:10em;
+	transition: 1s;
+	
+}
+
+.sousitem:hover
+
+{
+	color:#ff5aac;
+	transition:1s;
+}
+
+ul{
+	list-style-type:none;
+}
+
+#picgrid
+{
+	grid-column: 2/2;
+	grid-row: 1;
+	display: grid;
+	grid-gap: 5%;
+	grid-template-columns: repeat(2, 1fr);
+	width:70%;
+height:100%;
+	
+}
+.un
+{
+width:100%;
+height: auto;	
+grid-column: 1/2;
+grid-row: 1;
+padding-bottom:auto;
+
+}
+
+.deux
+{
+width: 100%;
+height: auto;
+grid-column: 2/2;
+grid-row: 1;	
+
+}
+
+.trois
+{
+width: 100%;
+height: auto;
+grid-column: 1/2;
+grid-row: 2;	
+}
+
+.quatre
+{
+width: 100%;
+height: auto;
+grid-column: 2/2;
+grid-row: 2;	
+}
+
+p.un
+{
+color:grey;	
+grid-column: 1/2;
+grid-row: 1;
+font-family:calibri;
+
+
+
+}
+
+p.deux
+{
+color:grey;	
+grid-column: 2/2;
+grid-row: 1;
+font-family:calibri;
+margin-top:auto;
+}
+
+p.trois
+{
+color:grey;	
+grid-column: 1/2;
+grid-row: 2;
+font-family:calibri;
+margin-top:auto;
+}
+
+p.quatre
+{
+color:grey;	
+grid-column: 2/2;
+grid-row: 2;
+font-family:calibri;
+margin-top:auto;
+}
+
+/*----------------------------------------------design-adaptatif*-----------------------------*/
+
+@media screen and (max-width:900px),(orientation:portrait)
+{
+	#picgrid
+{
+	grid-column: 1/1;
+	grid-row: 2;
+	display: grid;
+	grid-gap: 5%;
+	grid-template-columns: repeat(1,1fr);
+	width:75%;
+	margin: auto;
+	
+}
+
+#container
+{
+	display:grid;
+	grid-template-columns:repeat(1, 1fr);
+	grid-template-columns: 100% ;
+}
+	
+	#latbar
+{
+	grid-column: 1/1;
+	grid-row: 1;
+Height:100%;
+width:100%;
+Font-size: 125%;
+font-family: calibri;
+text-align: left;
+line-height: 2em;
+font-weight:100;
+	margin-left:auto;
+
+
+}
+
+.un
+{
+width:100%;
+height: auto;	
+grid-column: 1/2;
+grid-row: 1;
+}
+
+.deux
+{
+width: 100%;
+height: auto;
+grid-column: 1/1;
+grid-row: 2;	
+}
+
+.trois
+{
+width: 100%;
+height: auto;
+grid-column: 1/1;
+grid-row: 3;	
+}
+
+.quatre
+{
+width: 100%;
+height: auto;
+grid-column: 1/1;
+grid-row: 4;	
+}
+
+.menu
+{
+	position:relative;
+	
+}
+}
