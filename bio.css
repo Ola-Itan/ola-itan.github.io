@@ -4,6 +4,8 @@
 	display:grid;
 	grid-template-columns:repeat(2, 1fr);
 	grid-template-columns: 25% 75% ;
+	position:relative;
+	margin-top: 5%;
 
 }
 
@@ -26,6 +28,7 @@ font-weight:100;
 {
 	position:fixed;
 	margin-left:6%;
+	margin-top:20%;
 }
 
 .sousmenu
@@ -80,6 +83,23 @@ a:hover
 	color:#ff5aac;
 	transition:1s;
 }
+
+.logo
+	
+	{
+		position:fixed;
+		width:7.5%;
+		height:auto;
+		margin-left:9%;
+        opacity:1;
+        transition:1s;
+	}
+	
+	.logo:hover
+	{
+		opacity:0.3;
+		transition:1s;
+	}
 /*----------------------------------------------design-adaptatif*-----------------------------*/
 
 @media screen and (max-width:900px),(orientation:portrait)
