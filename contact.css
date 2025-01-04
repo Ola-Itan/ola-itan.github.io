@@ -1,0 +1,133 @@
+
+#container
+{
+	display:grid;
+	grid-template-columns:repeat(2, 1fr);
+	grid-template-columns: 25% 75% ;
+
+}
+
+#latbar
+{
+	grid-column: 1/2;
+	grid-row: 1;
+Height:100%;
+width:100%;
+Font-size: 125%;
+font-family: calibri;
+text-align: left;
+line-height: 2em;
+font-weight:100;
+
+
+}
+
+.menu
+{
+	position:fixed;
+	margin-left:6%;
+}
+
+.sousmenu
+{
+
+	color:black;
+	transition: 1s;
+}
+
+.sousmenu:hover
+{
+	color:#ff5aac;
+	transition:1s;
+}
+
+.sousmenu li
+{
+	max-height:0em;
+	overflow:hidden;
+	transition: 1s;
+	color:black;
+	
+}
+.sousmenu:hover li
+{
+	max-height:10em;
+	transition: 1s;
+	
+}
+
+.sousitem:hover
+
+{
+	color:#ff5aac;
+	transition:1s;
+}
+
+ul{
+	list-style-type:none;
+}
+
+#contact
+{
+	grid-column: 2/2;
+	grid-row: 1;
+Height:100%;
+width:100%;
+Font-size: 200%;
+font-family: calibri;
+text-align: left;
+line-height: 2em;
+font-weight:100;
+background-color:grey;
+text-align:center;
+}
+
+a
+{
+	text-decoration:none;
+	color:black;
+	transition:1s;
+}
+
+a:hover
+{
+	text-decoration:none;
+	color:#ff5aac;
+	transition:1s;
+}
+/*----------------------------------------------design-adaptatif*-----------------------------*/
+
+@media screen and (max-width:900px),(orientation:portrait)
+{
+
+#container
+{
+	display:grid;
+	grid-template-columns:repeat(1, 1fr);
+	grid-template-columns: 100% ;
+}
+	
+	#latbar
+{
+	grid-column: 1/1;
+	grid-row: 1;
+Height:100%;
+width:100%;
+Font-size: 125%;
+font-family: calibri;
+text-align: left;
+line-height: 2em;
+font-weight:100;
+	margin-left:auto;
+
+
+}
+
+
+
+.menu
+{
+	position:relative;
+	
+}
+}
