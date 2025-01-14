@@ -73,10 +73,9 @@ font-family: calibri;
 text-align: left;
 line-height: 2em;
 font-weight:100;
-background-color:black;
 text-align:center;
 border-radius:8px;
-Color:white;
+Color:black;
 opacity:1;
 transition:1s;
 }
@@ -102,7 +101,7 @@ a
 
 #contact a
 {
-	color:white;
+	color:black;
 }
 
 a:hover
