@@ -120,7 +120,7 @@ transition:1s;
 	
 	{
 	position:relative;
-		width:15%;
+		width:20%;
 		height:auto;
 opacity:1;
 transition:1s;	
@@ -141,11 +141,14 @@ transition:1s;
 	grid-column: 1/1;
 	grid-row: 1;
 Height:100%;
-width:100%;
+width:75%;
 Font-size: 125%;
 font-family: calibri;
+text-align: center;
 line-height: 2em;
 font-weight:100;
+margin-left:auto;
+margin-right:auto;
 
 
 
