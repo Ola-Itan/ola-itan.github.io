@@ -54,7 +54,7 @@ text-align: left;
 line-height: 2em;
 font-weight:100;
 position:fixed;
-margin-top:43%;
+margin-top:43.5%;
 margin-left:0%;
 }
 
@@ -82,7 +82,7 @@ a:hover
 		position:fixed;
 		width:7.5%;
 		height:auto;
-		margin-left:9%;
+		left:9%;
         opacity:1;
         transition:1s;
 	}
@@ -95,11 +95,15 @@ a:hover
 	
 	#biogrid
 {
+
+	
 	display:grid;
 	grid-template-columns:repeat(2, 1fr);
 	grid-template-columns: 50% 50% ;
 	width:70%;
-	grid-gap:5%;
+	column-gap:5%;
+	
+	
 	
 }
 	
@@ -115,7 +119,6 @@ font-family: calibri;
 text-align: left;
 line-height: 1.5em;
 font-weight:100;
-text-align:left;
 border-radius:8px;
 }
 
@@ -152,6 +155,21 @@ color:black;
 
 @media screen and (max-width:900px),(orientation:portrait)
 {
+	
+	.logo
+	
+	{
+	position:relative;
+		width:20%;
+		height:auto;
+opacity:1;
+transition:1s;
+left:0%;
+margin-right:auto;
+margin-left:auto;
+
+	}
+	
 
 #container
 {
@@ -165,22 +183,75 @@ color:black;
 	grid-column: 1/1;
 	grid-row: 1;
 Height:100%;
-width:100%;
+width:75%;
 Font-size: 125%;
 font-family: calibri;
-text-align: left;
+text-align: center;
 line-height: 2em;
 font-weight:100;
-	margin-left:auto;
+margin-left:auto;
+margin-right:auto;
 
 
 }
-
-
 
 .menu
 {
 	position:relative;
+	padding-left:0%;
+	text-align:center;
+	margin-top:0%;
+	margin-left:0%;
+	
 	
 }
+
+
+#biogrid
+{
+	display:grid;
+	grid-template-columns:repeat(1, 1fr);
+	width:70%;
+	grid-gap:5%;
+	margin-right:auto;
+margin-left:auto;
+	
+}
+	
+	#bio
+{
+	grid-column: 1/1;
+	grid-row: 2;
+Height:100%;
+width:100%;
+color:#black;
+Font-size: 100%;
+font-family: calibri;
+text-align: left;
+line-height: 1.5em;
+font-weight:100;
+text-align:center;
+border-radius:8px;
+margin-right:auto;
+margin-left:auto;
+}
+
+.profilpic
+{
+	grid-column: 1/;
+	grid-row: 1;
+Height:auto;
+width:100%;
+border-radius:8px;
+text-align:center;
+
+}
+
+.bio
+{
+margin-top:-2%;
+color:black;
+	transition:1s;
+}
+
 }

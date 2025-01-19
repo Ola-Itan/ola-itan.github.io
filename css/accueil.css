@@ -116,18 +116,25 @@ transition:1s;
 @media screen and (max-width:900px),(orientation:portrait)
 {
 	
-	.logo:hover
+	.logo
+	
 	{
-		opacity:0.3;
-		transition:1s;
+	position:relative;
+		width:15%;
+		height:auto;
+opacity:1;
+transition:1s;	
 
-}
+	}
+	
 
 #container
 {
 	display:grid;
 	grid-template-columns:repeat(1, 1fr);
 	grid-template-columns: 100% ;
+	
+}
 	
 	#latbar
 {
@@ -137,10 +144,9 @@ Height:100%;
 width:100%;
 Font-size: 125%;
 font-family: calibri;
-text-align: left;
 line-height: 2em;
 font-weight:100;
-	margin-left:auto;
+
 
 
 }
@@ -149,6 +155,8 @@ font-weight:100;
 .menu
 {
 	position:relative;
+	opacity:1;
 	
 }
 }
+

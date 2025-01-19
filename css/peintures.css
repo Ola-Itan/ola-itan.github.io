@@ -6,6 +6,7 @@
 	grid-template-columns: 25% 75% ;
 	position:relative;
 	margin-top: 5%;
+	
 
 }
 
@@ -55,7 +56,7 @@ text-align: left;
 line-height: 2em;
 font-weight:100;
 position:fixed;
-margin-top:43%;
+margin-top:44%;
 margin-left:0%;
 }
 
@@ -69,7 +70,6 @@ ul{
 	grid-row: 1;
 	display: grid;
 	column-gap:5%;
-	grid-column-gap:auto;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows:auto;
 	width:70%;
@@ -211,30 +211,32 @@ transition:1s;
 
 @media screen and (max-width:900px),(orientation:portrait)
 {
+	
+	.logo
+	
+	{
+	position:relative;
+		width:20%;
+		height:auto;
+opacity:1;
+transition:1s;
+left:0%;
+margin-right:auto;
+margin-left:auto;
+
+	}
+	
 	#picgrid
 {
 	grid-column: 1/1;
 	grid-row: 2;
 	display: grid;
-	grid-gap: 5%;
 	grid-template-columns: repeat(1,1fr);
-	width:75%.logo
+	width:75%;
+	text-align:center;
+	margin-left:auto;
+margin-right:auto;
 	
-	{
-		position:relative;
-		width:40%;
-		height:auto;
-		margin-left:33%;
-opacity:1;
-transition:1s;
-	}
-	
-	.logo:hover
-	{
-		opacity:0.3;
-		transition:1s;
-	};
-	margin: auto;
 	
 }
 
@@ -250,26 +252,40 @@ transition:1s;
 	grid-column: 1/1;
 	grid-row: 1;
 Height:100%;
-width:100%;
+width:75%;
 Font-size: 125%;
 font-family: calibri;
-text-align: left;
+text-align: center;
 line-height: 2em;
 font-weight:100;
-	margin-left:auto;
+margin-left:auto;
+margin-right:auto;
 
 
 }
 
-.un
+.menu
+{
+	position:relative;
+	padding-left:0%;
+	text-align:center;
+	margin-top:0%;
+	margin-left:0%;
+	
+	
+}
+
+
+
+.im1
 {
 width:100%;
 height: auto;	
-grid-column: 1/2;
+grid-column: 1/1;
 grid-row: 1;
 }
 
-.deux
+.im2
 {
 width: 100%;
 height: auto;
@@ -277,7 +293,7 @@ grid-column: 1/1;
 grid-row: 2;	
 }
 
-.trois
+.im3
 {
 width: 100%;
 height: auto;
@@ -285,7 +301,7 @@ grid-column: 1/1;
 grid-row: 3;	
 }
 
-.quatre
+.im4
 {
 width: 100%;
 height: auto;
@@ -293,9 +309,53 @@ grid-column: 1/1;
 grid-row: 4;	
 }
 
-.menu
+ul.im1
+{	
+grid-column: 1/1;
+grid-row: 1;
+font-family:calibri;
+font-weight:100;	
+font-size:0.9em;
+color:grey;
+padding-left:0%;
+
+}
+
+ul.im2
 {
-	position:relative;
+
+grid-column: 1/1;
+grid-row: 2;	
+font-family:calibri;
+font-weight:100;	
+font-size:0.9em;
+color:grey;
+padding-left:0%;
+}
+
+ul.im3
+{
+grid-column: 1/1;
+grid-row: 3;
+font-family:calibri;
+font-weight:100;	
+font-size:0.9em;
+color:grey;
+padding-left:0%;
 	
 }
+
+ul.im4
+{
+
+grid-column: 1/1;
+grid-row: 4;	
+font-family:calibri;
+font-weight:100;	
+font-size:0.9em;
+color:grey;
+padding-left:0%;
+
+}
+
 }

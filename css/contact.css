@@ -54,7 +54,7 @@ text-align: left;
 line-height: 2em;
 font-weight:100;
 position:fixed;
-margin-top:43%;
+margin-top:43.5%;
 margin-left:0%;
 }
 
@@ -126,7 +126,7 @@ a:hover
 		height:auto;
 opacity:1;
 transition:1s;
-margin-left:9%;
+left:9%;
 	}
 	
 	.logo:hover
@@ -167,6 +167,21 @@ border-radius:8px;
 
 @media screen and (max-width:900px),(orientation:portrait)
 {
+	
+	.logo
+	
+	{
+	position:relative;
+		width:20%;
+		height:auto;
+opacity:1;
+transition:1s;
+left:0%;
+margin-right:auto;
+margin-left:auto;
+
+	}
+	
 
 #container
 {
@@ -180,22 +195,84 @@ border-radius:8px;
 	grid-column: 1/1;
 	grid-row: 1;
 Height:100%;
-width:100%;
+width:75%;
 Font-size: 125%;
 font-family: calibri;
-text-align: left;
+text-align: center;
 line-height: 2em;
 font-weight:100;
-	margin-left:auto;
+margin-left:auto;
+margin-right:auto;
 
 
 }
-
-
 
 .menu
 {
 	position:relative;
+	padding-left:0%;
+	text-align:center;
+	margin-top:0%;
+	margin-left:0%;
+	
 	
 }
+
+
+#contactgrid
+{
+	display:grid;
+	grid-template-columns:repeat(1, 1fr);
+	width:70%;
+	grid-gap:5%;
+	margin-right:auto;
+margin-left:auto;
+	
+}
+	
+	#contact
+{
+	grid-column: 1/1;
+	grid-row: 2;
+margin-right:auto;
+margin-left:auto;
+Height:100%;
+width:100%;
+Font-size: 200%;
+font-family: calibri;
+line-height: 2em;
+font-weight:100;
+text-align:center;
+border-radius:8px;
+Color:black;
+opacity:1;
+transition:1s;
+}
+
+.profilpic
+{
+	grid-column: 1/;
+	grid-row: 1;
+Height:auto;
+width:100%;
+border-radius:8px;
+text-align:center;
+
+}
+
+#contact a
+
+{
+	
+	text-shadow: 0 0 0.25em;
+	color:#a4b3f9;
+}
+
+.logoig
+{
+filter:drop-shadow(0 0 0.25em #a4b3f9) drop-shadow(0 0 0.25em #a4b3f9);
+transition:1s;
+}
+
+
 }
